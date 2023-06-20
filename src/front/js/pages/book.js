@@ -109,7 +109,8 @@ export const Book = () => {
               <div id="flush-collapseTwo" className="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                 <div className="accordion-body ">
                   <div className="card-group">
-                    <div className="overflow-auto d-flex">
+                    <div className="row flex-nowrap overflow-auto">
+                    {/* <div className="overflow-auto d-flex"> */}
                       {services.map((element, index) => (
                         element.vehicle_type == selectedVehicleType && (
                           <div className={selectedServiceType===index+1 ? "card text-center card border-danger m-2" : "card text-center card border-dark m-2"} style={{ width: "30rem" }} key={index}>
@@ -123,9 +124,7 @@ export const Book = () => {
                                 <button className="btn btn-dark my-2" onClick={() => {
                                   handleSelectServiceType(index + 1)
                                   actions.addFavorites(element.name, element.price, dateService)}}  >
-                                 Select 
-                                  
-                          
+                                 Select
                                 </button>
                               </div>
                             </div>

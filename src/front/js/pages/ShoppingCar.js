@@ -26,7 +26,7 @@ export const ShoppingCar = () => {
             actions.fetchShoppingCart()
             actions.pagoMercadopago()
         }
-    }, [])
+    }, [store.totalValue])
 
 
     return (

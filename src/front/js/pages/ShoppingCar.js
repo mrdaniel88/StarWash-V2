@@ -34,14 +34,15 @@ export const ShoppingCar = () => {
         <div style={{ backgroundColor: '#40768C' }}  >
             <div className="container min-vh-100" >
                 <div className="text-black text-center" >
-                    <div className="card" style={{  backgroundColor: '#40768C' }}>
+                    <div className="card border-0" style={{  backgroundColor: '#40768C' }}>
                         <div className="row g-0">
                             <h1 className="card-title p-5">ShoppingCart</h1> <br></br>
                             <div className="col-md-4" >
                                 <h2 className="card-title pb-2" >Your Account</h2><br></br>
                                 <img src="https://cdn-icons-png.flaticon.com/512/727/727399.png?w=826&t=st=1686358778~exp=1686359378~hmac=f84a1339da9e966863baaaa695a7da2268cb3f815bde80a01506c7777cf7cf50" className="card-img-top" alt="..." style={{ width: "100px" }} />
                                 <h3> {user_services[0]?.userName}</h3> <br></br>
-                                <h3>ADDRESS: {user_services[0]?.address}</h3> <br></br>
+                                <h3>{user_services[0]?.address}</h3> <br></br>
+                                <h3> {user_services[0]?.city}</h3> <br></br>
 
 
                             </div>

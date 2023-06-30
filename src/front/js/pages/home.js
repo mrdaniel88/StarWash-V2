@@ -44,15 +44,17 @@ export const Home = () => {
           <h5 className="card-title">Now featuring StarWash</h5>
           <img src="https://plus.unsplash.com/premium_photo-1661443447441-1fd90ea3eca5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" className="card-img-top" alt="..." />
           <p className="card-text">By using our services, you will extend the lifespan of your car's paint, save time, and optimize your time while we wash your car. And our prices are on the crazy side of the Force.</p>
-          <Link to="/services"><button type="button" className="rounded " style={{ backgroundColor: '#F4A261', color: '#000', padding: '18px 32px', borderRadius: '6px', boxShadow: '0 6px 0 black' }}>Services</button></Link>
+          <Link to="/services"><button type="button" className="nav-button custom-button">Services</button></Link>
         </div>
       </div>
     </div>
 
 
-    <div className="d-flex justify-content-center" style={{ backgroundColor: "#40768C"}}>
-      <div className="card col-4 border-0 d-flex flex-column align-items-center mt-5" style={{ backgroundColor: "#40768C"}}>
-        <img src="https://images.squarespace-cdn.com/content/v1/632cad1bcd38e003eb2d978e/b84c2375-f1ad-4dd1-9b62-fba66e30c8a5/text-message+icon.png?format=300w" style={{ width: "25%", height: "35%" }} className="card-img-top justify-content-center" alt="..." />
+    <div className=" d-flex justify-content-center" style={{ backgroundColor: "#24292e"}}>
+      <div className="icons-containers card col-4 border-0 d-flex flex-column align-items-center mt-5">
+        {/* <img src="https://images.squarespace-cdn.com/content/v1/632cad1bcd38e003eb2d978e/b84c2375-f1ad-4dd1-9b62-fba66e30c8a5/text-message+icon.png?format=300w" style={{ width: "25%", height: "35%" }} className="card-img-top justify-content-center" alt="..." />
+         */}
+         <i class="icons fa-solid fa-calendar-days"></i>
         <div className="card-body">
         <h5 className="card-title d-flex flex-column align-items-center">Step #1</h5>
           <p className="card-text">Click the “Book Now” button, then select a date/time, and lastly fill out the customer intake information. That’s it!</p>
@@ -60,8 +62,9 @@ export const Home = () => {
       </div>
 
 
-      <div className="card col-4 border-0 d-flex flex-column align-items-center mt-5" style={{ backgroundColor: "#40768C"}}>
-        <img src="https://images.squarespace-cdn.com/content/v1/632cad1bcd38e003eb2d978e/482bccab-e622-4dbd-85c5-4656c01a4135/car+wash+icon.png?format=300w" style={{ width: "25%", height: "35%" }} className="card-img-top justify-content-center" alt="..." />
+      <div className="icons-containers card col-4 border-0 d-flex flex-column align-items-center mt-5" >
+        {/* <img src="https://images.squarespace-cdn.com/content/v1/632cad1bcd38e003eb2d978e/482bccab-e622-4dbd-85c5-4656c01a4135/car+wash+icon.png?format=300w" style={{ width: "25%", height: "35%" }} className="card-img-top justify-content-center" alt="..." /> */}
+        <i class="icons fa-solid fa-hand-sparkles"></i>
         <div className="card-body">
         <h5 className="card-title d-flex flex-column align-items-center">Step #2</h5>
           <p className="card-text">We come to your home or place of business with all the tools and detail! All we ask is for a water spigot and an electrical outlet.</p>
@@ -69,8 +72,9 @@ export const Home = () => {
       </div>
 
 
-      <div className="card col-4 border-0 d-flex flex-column align-items-center mt-5" style={{ backgroundColor: "#40768C"}}>
-        <img src="https://images.squarespace-cdn.com/content/v1/632cad1bcd38e003eb2d978e/e778f883-ad94-4b56-8ff4-78e89a939ec1/relax+icon+.png?format=300w" style={{ width: "25%", height: "35%" }} className="card-img-top justify-content-center" alt="..." />
+      <div className="icons-containers card col-4 border-0 d-flex flex-column align-items-center mt-5" >
+        {/* <img src="https://images.squarespace-cdn.com/content/v1/632cad1bcd38e003eb2d978e/e778f883-ad94-4b56-8ff4-78e89a939ec1/relax+icon+.png?format=300w" style={{ width: "25%", height: "35%" }} className="card-img-top justify-content-center" alt="..." /> */}
+        <i class="icons fa-solid fa-umbrella-beach"></i>
         <div className="card-body">
         <h5 className="card-title d-flex flex-column align-items-center">Step #3</h5>
           <p className="card-text">Go on about your day and in a matter of few hours, your vehicle will be set to factory reset!</p>

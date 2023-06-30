@@ -6,7 +6,8 @@
     on that page only (the ones not reused in other pages).
 */
 .custom-home {
-    background-color:#40768C ;
+    background-color:#24292e ;
+    color: #eeffff;
 }
 .button-shadow {
     background-color: #F4A261;
@@ -19,6 +20,28 @@
     box-shadow: 0 6px 0 black;
   }
  
+  .nav-button{
+    margin-right: 10px;
+    background-color: #EFC000;
+    color:black;
+    padding: 18px 32px;
+    border-radius: 50px;
+  }
+  
+  .nav-button:hover{
+    border-radius: 50px;
+    box-shadow: 3px 2px 10px 5px #B70000;
+  }
+
+  .icons{
+    color:#eeffff;
+    font-size: 100px;
+  }
+
+  .icons-containers{
+    background-color:#24292e ;
+    color: #eeffff;
+  }
   
   
   

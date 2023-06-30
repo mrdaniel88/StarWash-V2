@@ -41,7 +41,7 @@ export const Home = () => {
 
       <div className="card custom-home border-0 me-5 pe-2" style={{ width: "18rem" }}>
         <div className="card-body">
-          <h5 className="card-title">Now featuring StarWash</h5>
+          <h5 className="card-title" style={{ color: "#EFC000"}}>Now featuring StarWash</h5>
           <img src="https://plus.unsplash.com/premium_photo-1661443447441-1fd90ea3eca5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" className="card-img-top" alt="..." />
           <p className="card-text">By using our services, you will extend the lifespan of your car's paint, save time, and optimize your time while we wash your car. And our prices are on the crazy side of the Force.</p>
           <Link to="/services"><button type="button" className="nav-button custom-button">Services</button></Link>

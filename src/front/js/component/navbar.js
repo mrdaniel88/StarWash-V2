@@ -49,8 +49,8 @@ export const Navbar = () => {
 					<div className="btn-group" role="group" aria-label="Basic example">
 						{
 							!!store.accessToken ?
-								<><button onClick={logout} type="button" className="nav-button custom-button">Logout</button><Link to="/shoppingCar">
-									<button type="button" className="nav-button custom-button position-relative">
+								<><button onClick={logout} type="button" className="nav-button btn btn-dark custom-button">Logout</button><Link to="/shoppingCar">
+									<button type="button" className="nav-button btn btn-dark custom-button position-relative">
 										<i className="fa-solid fa-cart-shopping"></i>
 										<span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
 											{store.user_services.length}
@@ -58,8 +58,8 @@ export const Navbar = () => {
 									</button>
 								</Link></>
 								:
-								<><Link to="/Login"><button type="button" className="nav-button custom-button">Login</button></Link>
-									<Link to="/Register"><button type="button" className="nav-button custom-button">SignUp</button></Link></>
+								<><Link to="/Login"><button type="button" className="nav-button btn btn-dark custom-button">Login</button></Link>
+									<Link to="/Register"><button type="button" className="nav-button btn btn-dark custom-button">SignUp</button></Link></>
 						}
 
 					</div>

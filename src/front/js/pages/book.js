@@ -25,18 +25,8 @@ export const Book = () => {
     else {
       actions.fetchServices()
       actions.fetchVehicleTypes()
-
-      // actions.pagoMercadopago()
     }
-
-
-
-
   }, [])
-
-
-
-
 
   const handleSelectVehicleType = (vehicleType) => {
     setSelectedVehicleType(vehicleType);
@@ -46,11 +36,6 @@ export const Book = () => {
     setSelectedServiceType(vehicleType);
     
   };
-  // const pagoMercadoPago = () => {
-  //   window.location.replace(store?.mercadopago.init_point);
-  // };
-
-
 
   return (
     <div style={{ backgroundColor: '#40768C', color: '#000' }}>

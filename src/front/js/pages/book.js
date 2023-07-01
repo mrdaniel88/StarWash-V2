@@ -9,6 +9,7 @@ import 'react-calendar-datetime-picker/dist/index.css'
 
 
 import { useNavigate } from "react-router-dom";
+import { object } from "prop-types";
 
 export const Book = () => {
 
@@ -37,6 +38,13 @@ export const Book = () => {
   const handleSelectServiceType = (vehicleType) => {
     setSelectedServiceType(vehicleType);
 
+  };
+
+  const handleDateChange = (newDate) => {
+    if (newDate && newDate.year && newDate.month && newDate.day) {
+      const selectedDate = new Date(newDate.year, newDate.month - 1, newDate.day);
+      setDateService(selectedDate);
+    }
   };
 
   return (
@@ -82,8 +90,10 @@ export const Book = () => {
               </h2>
               <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                 <div className="accordion-body" >
-                  <DtPicker onChange={setDateService}  />
+                  <DtPicker onChange={handleDateChange}  />
                   {/* <DateTimePicker onChange={setDateService} value={dateService} /> */}
+                  {console.log(dateService)}
+                  {/* {typeof dateService == 'null' ? setDateService(new Date(dateService.year, dateService.month, dateService.day)) : undefined} */}
                   {dateService && <p>Selected Date: {dateService.toString()}</p>}
 
                 </div>

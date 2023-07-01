@@ -81,21 +81,8 @@ export const Book = () => {
               <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                 <div className="accordion-body" >
 
-
-                  <DateTimePicker
-                    onChange={(newDate) => {
-                      if (newDate.getTime() < new Date().getTime()) {
-                        alert('Invalid datetime. Select a valid datetime to continue');
-                      } else {
-                        setDateService(newDate);
-                      }
-                    }}
-                    value={dateService}
-                  />
-                  {dateService && (
-                    <p>Selected Date: {dateService.toString()}</p>
-                  )}
-
+                  <DateTimePicker onChange={setDateService} value={dateService} />
+                  {dateService && <p>Selected Date: {dateService.toString()}</p>}
 
                 </div>
               </div>
@@ -138,7 +125,7 @@ export const Book = () => {
               </div>
             </div>
             <br></br>
-            <div className="d-grid gap-2 col-6 mx-auto" style={{ paddingBotom: "2px" }}>
+            <div className="d-grid gap-2 col-6 mx-auto" style={{ "padding-botom": "2px" }}>
               <Link to="/shoppingCar">
                 <button className="nav-button btn btn-dark justify-content-md-center">Go to Shopping Cart
                 </button>

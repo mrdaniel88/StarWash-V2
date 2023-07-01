@@ -4,6 +4,8 @@ import rigoImageUrl from "../../img/rigo-baby.jpg";
 import "../../styles/home.css";
 import DateTimePicker from "react-datetime-picker";
 import { Link } from "react-router-dom";
+import DtPicker from 'react-calendar-datetime-picker'
+import 'react-calendar-datetime-picker/dist/index.css'
 
 
 import { useNavigate } from "react-router-dom";
@@ -16,7 +18,7 @@ export const Book = () => {
   const [selectedVehicleType, setSelectedVehicleType] = useState(null)
   const [selectedServiceType, setSelectedServiceType] = useState(null)
   const navigate = useNavigate()
-  const [dateService, setDateService] = useState(new Date());
+  const [dateService, setDateService] = useState(null);
 
   useEffect(() => {
     if (!store.accessToken) {
@@ -80,8 +82,8 @@ export const Book = () => {
               </h2>
               <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                 <div className="accordion-body" >
-
-                  <DateTimePicker onChange={setDateService} value={dateService} />
+                  <DtPicker onChange={setDateService}  />
+                  {/* <DateTimePicker onChange={setDateService} value={dateService} /> */}
                   {dateService && <p>Selected Date: {dateService.toString()}</p>}
 
                 </div>

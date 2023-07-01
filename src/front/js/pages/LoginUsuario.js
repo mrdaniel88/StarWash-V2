@@ -34,7 +34,7 @@ export const LoginUsuario = () => {
   }
 
   return (
-    <div style={{ backgroundColor: '#24292e', color:'#eeffff' }}>
+    <div style={{ backgroundColor: '#24292e', color: '#eeffff' }}>
       <div className="container min-vh-100" >
         <h3>Sing in</h3>
         <form onSubmit={submitForm}>
@@ -52,28 +52,31 @@ export const LoginUsuario = () => {
             </div>
           </div>
           <div>
-          <div className="form-check ">
-            <input className="form-check-input" type="checkbox" name="password" value="" id="flexCheckChecked" />
-            <label className="form-check-label" htmlFor="flexCheckChecked">
-              Keep me signed in
-            </label>
-          </div>
-          <Link to="/recovery">
-          <div className="d-grid gap-2 d-md-flex">
-            <button type="button" className="nav-button btn btn-dark mb-2">Forgot your password?</button>
+            <div className="form-check ">
+              <input className="form-check-input" type="checkbox" name="password" value="" id="flexCheckChecked" />
+              <label className="form-check-label" htmlFor="flexCheckChecked">
+                Keep me signed in
+              </label>
             </div>
-          </Link>
+
           </div>
           <div className="col-12 mb-3 ">
             <div className="d-grid gap-2">
               <button className="nav-button btn btn-dark" type="submit">Login</button>
             </div>
-          </div>      
-              <Link to="/Register">
-              <div className="d-grid gap-2">
-                <button type="button" className="nav-button btn btn-dark " >Become a Member</button>
-                </div>
-              </Link>       
+          </div>
+          <Link to="/Register">
+            <div className="d-grid gap-2">
+              <button type="button" className="nav-button btn btn-dark " >Become a Member</button>
+            </div>
+          </Link>
+          <div>
+            <Link to="/recovery">
+              <div className="d-grid gap-2 d-md-flex mt-3">
+                <button type="button" className="nav-button btn btn-danger mb-2">Forgot your password?</button>
+              </div>
+            </Link>
+          </div>
         </form>
       </div>
     </div>

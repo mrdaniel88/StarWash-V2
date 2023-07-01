@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 export const Login = () => {
   const { store, actions } = useContext(Context);
-  const navigate=useNavigate()
+  const navigate = useNavigate()
 
   // function Password() {
   //   // Initialize a boolean state
@@ -34,86 +34,86 @@ export const Login = () => {
   }
 
   return (
-    <div style={{ backgroundColor: '#40768C' }}>
-    <div className="container" >
-      <h3>Details</h3>
-      <form onSubmit={submitForm}>
-        <div className="row g-3" >
-          <div className="col-md-6 position-relative">
-            <label className="form-label">First name</label>
-            <input type="text" className="form-control" name="first_name" placeholder="First name" required />
-          </div>
-          <div className="col-md-6 position-relative">
-            <label className="form-label">Last name</label>
-            <input type="text" className="form-control" name="last_name" placeholder="Last name" required />
-          </div>
-          <div className="col-md-6 position-relative">
-            <label className="form-label">City</label>
-            <input type="text" className="form-control" name="city" placeholder="City" required />
-          </div>
-          <div className="col-md-6 position-relative">
-            <label className="form-label">Country</label>
-            <input type="text" className="form-control" name="country" placeholder="Country" required />
-          </div>
-   
-          <div className="col-md-4 position-relative">
-            <label className="form-label">Zip Code</label>
-            <input type="text" className="form-control" name="zip_code" placeholder="Enter your zip code. E.g. 10710" required />
-          </div>
-          <div className="col-md-4 position-relative">
-            <label className="form-label">Adress line 1</label>
-            <input type="text" className="form-control" name="address_one" placeholder="Street address, P.O box or military address" required />
-          </div>
-          <div className="col-md-4 position-relative">
-            <label className="form-label">Adress line 2</label>
-            <input type="text" className="form-control" name="address_two" placeholder="Building, floor, Apt, Suite, Unit, etc." required />
-          </div>
-          <div className="col-md-12 position-relative">
-            <label className="form-label">Phone Number</label>
-            <input type="text" className="form-control" name="phone" placeholder="Phone number" required />
-          </div>
-          <h3>Privacy</h3>
-          <div className="col-md-12 position-relative">
-            <label className="form-label">Email</label>
-            <input type="text" className="form-control" name="email" placeholder="Username" aria-label="Username" required />
-          </div>
-          <div className="form-group">
-            <label className="form-label">Password</label>
-            <div className="input-group">
-              <input type={passwordShown ? "text" : "password"} className="form-control" name="password" required />
-              <button onClick={togglePassword} className="input-group-text">
-                <i className={passwordShowneye ? "fa fa-eye" : "fa fa-eye-slash"}></i>
-              </button>
+    <div style={{ backgroundColor: '#24292e', color: '#eeffff' }}>
+      <div className="container" >
+        <h3>Details</h3>
+        <form onSubmit={submitForm}>
+          <div className="row g-3" >
+            <div className="col-md-6 position-relative">
+              <label className="form-label">First name</label>
+              <input type="text" className="form-control" style={{ backgroundColor: '#616161', color: '#B70000' }} name="first_name" placeholder="First name" required />
             </div>
-          </div>
-          {/* <div id="passwordHelpBlock" className="form-text text-dark">
-            Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
-          </div> */}
-          <div className="form-group">
-            <label className="form-label">Confirm Password</label>
-            <div className="input-group">
-              <input type="password" className="form-control" name="password" required />
-              <span className="input-group-text"><i className="fa fa-eye-slash" aria-hidden="true"></i></span>
+            <div className="col-md-6 position-relative">
+              <label className="form-label">Last name</label>
+              <input type="text" className="form-control" style={{ backgroundColor: '#616161', color: '#B70000' }} name="last_name" placeholder="Last name" required />
             </div>
-          </div>
-          <div className="col-12">
-            <div className="form-check">
-              <input className="form-check-input is-invalid" type="checkbox" value="" aria-describedby="invalidCheck3Feedback" required />
-              <label className="form-check-label text-dark">
-                Agree to terms and conditions
-              </label>
-              <div id="invalidCheck3Feedback" className="invalid-feedback text-dark">
-                You must agree before submitting.
+            <div className="col-md-6 position-relative">
+              <label className="form-label">City</label>
+              <input type="text" className="form-control" style={{ backgroundColor: '#616161', color: '#B70000' }} name="city" placeholder="City" required />
+            </div>
+            <div className="col-md-6 position-relative">
+              <label className="form-label">Country</label>
+              <input type="text" className="form-control" style={{ backgroundColor: '#616161', color: '#B70000' }} name="country" placeholder="Country" required />
+            </div>
+
+            <div className="col-md-4 position-relative">
+              <label className="form-label">Zip Code</label>
+              <input type="text" className="form-control" style={{ backgroundColor: '#616161', color: '#B70000' }} name="zip_code" placeholder="Enter your zip code. E.g. 10710" required />
+            </div>
+            <div className="col-md-4 position-relative">
+              <label className="form-label">Adress line 1</label>
+              <input type="text" className="form-control" style={{ backgroundColor: '#616161', color: '#B70000' }} name="address_one" placeholder="Street address, P.O box or military address" required />
+            </div>
+            <div className="col-md-4 position-relative">
+              <label className="form-label">Adress line 2</label>
+              <input type="text" className="form-control" style={{ backgroundColor: '#616161', color: '#B70000' }} name="address_two" placeholder="Building, floor, Apt, Suite, Unit, etc." required />
+            </div>
+            <div className="col-md-12 position-relative">
+              <label className="form-label">Phone Number</label>
+              <input type="text" className="form-control" style={{ backgroundColor: '#616161', color: '#B70000' }} name="phone" placeholder="Phone number" required />
+            </div>
+            <h3>Privacy</h3>
+            <div className="col-md-12 position-relative">
+              <label className="form-label">Email</label>
+              <input type="text" className="form-control" style={{ backgroundColor: '#616161', color: '#B70000' }} name="email" placeholder="Username" aria-label="Username" required />
+            </div>
+            <div className="form-group">
+              <label className="form-label">Password</label>
+              <div className="input-group">
+                <input type={passwordShown ? "text" : "password"} className="form-control" style={{ backgroundColor: '#616161', color: '#B70000' }} name="password" required />
+                <button onClick={togglePassword} className="input-group-text">
+                  <i className={passwordShowneye ? "fa fa-eye" : "fa fa-eye-slash"}></i>
+                </button>
               </div>
             </div>
+            {/* <div id="passwordHelpBlock" className="form-text text-dark">
+            Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+          </div> */}
+            <div className="form-group">
+              <label className="form-label">Confirm Password</label>
+              <div className="input-group">
+                <input type="password" className="form-control" style={{ backgroundColor: '#616161', color: '#B70000' }} name="password" required />
+                <span className="input-group-text"><i className="fa fa-eye-slash" aria-hidden="true"></i></span>
+              </div>
+            </div>
+            <div className="col-12" style={{ backgroundColor: '#24292e', color: '#eeffff' }}>
+              <div className="form-check"  >
+                <input className="form-check-input is-invalid"  type="checkbox" value="" aria-describedby="invalidCheck3Feedback" required />
+                <label className="form-check-label text-dark" >
+                  Agree to terms and conditions
+                </label>
+                <div id="invalidCheck3Feedback" className="invalid-feedback text-dark">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <div className="col-12 ">
+              <button className="nav-button btn btn-dark mx-1" type="submit">Save</button>
+              <button type="button" className="nav-button btn btn-danger">Cancel</button>
+            </div>
           </div>
-          <div className="col-12 ">
-            <button className="btn btn-dark mx-1" type="submit">Save</button>
-            <button type="button" className="btn btn-secondary">Cancel</button>
-          </div>
-        </div>
-      </form>
-    </div>
+        </form>
+      </div>
     </div>
   );
 };

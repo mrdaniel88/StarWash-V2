@@ -59,7 +59,7 @@ export const LoginUsuario = () => {
             </label>
           </div>
           <Link to="/recovery">
-          <div class="d-grid gap-2 d-md-flex">
+          <div className="d-grid gap-2 d-md-flex">
             <button type="button" className="nav-button btn btn-dark mb-2">Forgot your password?</button>
             </div>
           </Link>

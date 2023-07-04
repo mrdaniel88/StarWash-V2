@@ -6,10 +6,24 @@ import { BackendURL } from "./component/backendURL";
 import { Home } from "./pages/home";
 import { Demo } from "./pages/demo";
 import { Single } from "./pages/single";
+import { Login } from "./pages/Login";
+import { LoginUsuario } from "./pages/LoginUsuario";
+import { Services } from "./pages/services";
+import { Questions } from "./pages/questions";
+import { Book } from "./pages/book";
+import { Logout } from "./pages/Logout";
+import { ShoppingCar } from "./pages/ShoppingCar";
 import injectContext from "./store/appContext";
+import { RecoveryPassword } from "./pages/recovery";
+
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import { AboutUs } from "./pages/aboutUs";
+import { TestData } from "./pages/testdata";
+import { ChangePassword } from "./pages/changePassword";
+
+
 
 //create your first component
 const Layout = () => {
@@ -17,7 +31,7 @@ const Layout = () => {
     // you can set the basename on the .env file located at the root of this project, E.g: BASENAME=/react-hello-webapp/
     const basename = process.env.BASENAME || "";
 
-    if(!process.env.BACKEND_URL || process.env.BACKEND_URL == "") return <BackendURL/ >;
+    if (!process.env.BACKEND_URL || process.env.BACKEND_URL == "") return <BackendURL />;
 
     return (
         <div>
@@ -26,10 +40,21 @@ const Layout = () => {
                     <Navbar />
                     <Routes>
                         <Route element={<Home />} path="/" />
+                        <Route element={<Login />} path="/Register" />
+                        <Route element={<LoginUsuario />} path="/Login" />
+                        <Route element={<Services />} path="/services" />
+                        <Route element={<Book />} path="/book" />
+                        <Route element={<Questions />} path="/frecuently-asked-questions" />
                         <Route element={<Demo />} path="/demo" />
+                        <Route element={<RecoveryPassword />} path="/recovery" />
+                        <Route element={<ChangePassword />} path="/changepassword" />
+                        <Route element={<AboutUs />} path="/aboutUs" />
+                        <Route element={<TestData />} path="/testdata" />
                         <Route element={<Single />} path="/single/:theid" />
+                        <Route element={<Logout />} path="/Logout" />
+                        <Route element={<ShoppingCar />} path="/shoppingCar" />
                         <Route element={<h1>Not found!</h1>} />
-                    </Routes>
+                        </Routes>
                     <Footer />
                 </ScrollToTop>
             </BrowserRouter>

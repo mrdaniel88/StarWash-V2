@@ -1,0 +1,15 @@
+.custom-aboutUs {
+  background-color:#24292e ;
+  color: #eeffff;
+}
+
+.justify {
+    text-align: justify;
+  }
+
+  div > img {
+    border-radius: 8px;
+    height: 220px
+  }
+
+ 

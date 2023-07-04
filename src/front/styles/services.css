@@ -1,0 +1,12 @@
+.nav-button{
+    margin-right: 10px;
+    background-color: darkgoldenrod;
+    color:black;
+    padding: 18px 32px;
+    border-radius: 50px;
+  }
+  
+  .nav-button:hover{
+    border-radius: 50px;
+    box-shadow: 3px 2px 10px 5px #B70000;
+  }

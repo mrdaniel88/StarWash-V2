@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-
+import "../../styles/home.css";
 import { Context } from "../store/appContext";
 
 export const RecoveryPassword = () => {
@@ -17,7 +17,7 @@ export const RecoveryPassword = () => {
       }
 
 	return (
-    <div style={{ backgroundColor: '#40768C' }}>
+    <div style={{ backgroundColor: '#24292e' }}>
         <div className="container min-vh-100" >
 
         <h3>Forgot your Password?</h3>
@@ -28,7 +28,7 @@ export const RecoveryPassword = () => {
           </div>
           <div className="col-12 mb-3 ">
             <div className="d-grid gap-2">
-              <button className="btn btn-dark  mx-1" type="submit">Recovery Password</button>
+              <button className="nav-button btn btn-dark  mx-1" type="submit">Recovery Password</button>
             </div>
           </div>
         </form>

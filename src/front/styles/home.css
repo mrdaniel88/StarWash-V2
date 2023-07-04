@@ -5,63 +5,68 @@
     one more css for each page that will contain the selected used 
     on that page only (the ones not reused in other pages).
 */
-.custom-home {
-    background-color:#24292e ;
-    color: #eeffff;
+
+body {
+  background-color: #24292e;
+  color: #eeffff;
 }
+
+.form-control {
+  background-color: #616161;
+  color: #B70000
+}
+
+.custom-home {
+  background-color: #24292e;
+  color: #eeffff;
+}
+
 .button-shadow {
-    background-color: #F4A261;
-    color: #000;
-    padding: 18px 32px;
-    border-radius: 6px;
-  }
-  
-  .button-shadow:hover {
-    box-shadow: 0 6px 0 black;
-  }
- 
-  .nav-button{
-    margin-right: 10px;
-    background-color: darkgoldenrod;
-    color:black;
-    padding: 18px 32px;
-    border-radius: 50px;
-  }
-  
-  .nav-button:hover{
-    border-radius: 50px;
-    box-shadow: 3px 2px 10px 5px #B70000;
-  }
+  background-color: #F4A261;
+  color: #000;
+  padding: 18px 32px;
+  border-radius: 6px;
+}
 
-  .icons{
-    color:darkgoldenrod;
-    font-size: 100px;
-  }
+.button-shadow:hover {
+  box-shadow: 0 6px 0 black;
+}
 
-  .icons-containers{
-    background-color:#24292e ;
-    color: #eeffff;
-  }
+.nav-button {
+  margin-right: 10px;
+  background-color: darkgoldenrod;
+  color: black;
+  padding: 18px 32px;
+  border-radius: 50px;
+}
 
-  .accordion-button {
-    background-color:#616161 ;
-    color: #eeffff;
-  }
+.nav-button:hover {
+  border-radius: 50px;
+  box-shadow: 3px 2px 10px 5px #B70000;
+}
 
-  .accordion-body {
-    background-color:#616161 ;
-    color: #eeffff;
-  }
+.icons {
+  color: darkgoldenrod;
+  font-size: 100px;
+}
 
-  .custom-calendar{
-    
-      width: 500px;
-    
-  }
-  
-  
-  
-  
-  
-  
-  
+.icons-containers {
+  background-color: #24292e;
+  color: #eeffff;
+}
+
+.accordion-button {
+  background-color: #616161;
+  color: #eeffff;
+}
+
+.accordion-body {
+  background-color: #616161;
+  color: #eeffff;
+}
+
+.custom-calendar {
+
+  width: 500px;
+
+}
